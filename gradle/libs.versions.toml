@@ -8,10 +8,12 @@ machete = "1.+"
 minecraft = "1.19.2"
 yarn = "1.19.2+build.28"
 forge="1.19.2-43.2.0"
+kotlin_forge="3.8.0"
 
 [libraries]
 minecraft = { module = "com.mojang:minecraft", version.ref = "minecraft" }
 forge = { module = "net.minecraftforge:forge", version.ref = "forge" }
+kotlin_forge = { module = "thedarkcolour:kotlinforforge", version.ref = "kotlin_forge" }
 
 [plugins]
 loom = { id = "dev.architectury.loom", version.ref = "loom" }

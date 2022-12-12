@@ -1,5 +1,6 @@
 plugins {
     java
+    `kotlin-dsl`
 
     alias(libs.plugins.loom)
     //alias(libs.plugins.loom.quiltflower)
@@ -23,6 +24,7 @@ loom{
 
 repositories {
     mavenCentral()
+    maven("https://thedarkcolour.github.io/KotlinForForge/")
 }
 
 val minecraftVersion = libs.versions.minecraft.get()
@@ -31,6 +33,7 @@ dependencies {
     minecraft(libs.minecraft)
     mappings("net.fabricmc:yarn:${libs.versions.yarn.get()}:v2")
     forge(libs.forge)
+    modImplementation(libs.kotlin.forge)
 
 }
 
