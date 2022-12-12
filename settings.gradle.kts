@@ -4,14 +4,10 @@ pluginManagement {
         gradlePluginPortal()
         maven("https://maven.fabricmc.net")
         maven("https://maven.quiltmc.org/repository/release")
+        maven("https://maven.architectury.dev/")
+        maven("https://files.minecraftforge.net/maven/")
     }
 }
 
-dependencyResolutionManagement {
-    versionCatalogs {
-        create("libs")
-    }
-}
-
-rootProject.name = "FabricModTemplate"
+rootProject.name = "ArchitecturyModTemplateKotlin-Forge"
 
